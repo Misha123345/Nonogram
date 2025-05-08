@@ -1,0 +1,18 @@
+.commentsList {
+  margin-top: 2rem;
+}
+
+.commentsList h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.noComments {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+} 

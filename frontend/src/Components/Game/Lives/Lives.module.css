@@ -1,0 +1,46 @@
+.livesContainer {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+}
+
+.lives {
+  display: flex;
+  gap: 5px;
+}
+
+.heart {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.emptyHeart {
+  opacity: 0.5;
+}
+
+.heartBeat {
+  animation: heartbeat 0.6s ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.3); 
+  }
+  100% { 
+    transform: scale(1); 
+  }
+}
+
+.active {
+  color: red;
+  transform: scale(1);
+}
+
+.inactive {
+  color: #999;
+  transform: scale(0.8);
+  opacity: 0.5;
+} 

@@ -1,0 +1,59 @@
+.scoresTableContainer {
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.scoresTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.scoresTable th {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: left;
+}
+
+.scoresTable th:first-child,
+.scoresTable td:first-child {
+  text-align: center;
+  width: 80px;
+}
+
+.scoresTable tr {
+  border-bottom: 1px solid #eee;
+}
+
+.scoresTable tr:last-child {
+  border-bottom: none;
+}
+
+.scoresTable td {
+  padding: 1rem;
+}
+
+.topScore {
+  background-color: rgba(159, 122, 234, 0.1);
+  font-weight: bold;
+}
+
+.goldMedal,
+.silverMedal,
+.bronzeMedal {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .scoresTable th,
+  .scoresTable td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+} 
+
+.scoresTableHeader > th {
+  text-align: center;
+}

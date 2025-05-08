@@ -1,0 +1,48 @@
+.ratingOverview {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.averageRating {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+  padding-right: 2rem;
+}
+
+.ratingNumber {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.ratingStars {
+  margin: 1rem 0;
+}
+
+.ratingCount {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .ratingOverview {
+    flex-direction: column;
+  }
+  
+  .averageRating {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+} 

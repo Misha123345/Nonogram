@@ -1,0 +1,147 @@
+.cell {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+  transition: background-color 0.1s ease;
+}
+
+.cell:hover {
+  background-color: rgba(138, 43, 226, 0.1);
+}
+
+.cell.filled:hover {
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.filled {
+  background-color: var(--primary-color);
+  transition: background-color 0.2s ease;
+}
+
+.marked {
+  position: relative;
+}
+
+.marked::before {
+  content: "×";
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--marked-cell);
+  animation: markCell 0.3s ease;
+}
+
+@keyframes markCell {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.completed {
+  cursor: default;
+}
+
+.completed.filled {
+  background-color: var(--primary-color);
+}
+
+.completed:not(.filled) {
+  background-color: white;
+}
+
+.wrong {
+  background-color: #ff6b6b;
+}
+
+.wrongMove {
+  background-color: #ffdddd !important;
+  position: relative;
+  z-index: 5;
+  border: 1px solid #ff0000 !important;
+}
+
+.wrongX {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.crossMark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.crossMarkLine1, .crossMarkLine2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ff0000;
+  transform-origin: center;
+}
+
+.crossMarkLine1 {
+  transform: translateY(-50%) rotate(45deg);
+  animation: crossLine 0.3s ease-out;
+}
+
+.crossMarkLine2 {
+  transform: translateY(-50%) rotate(-45deg);
+  animation: crossLine 0.3s ease-out 0.1s;
+}
+
+@keyframes crossLine {
+  0% {
+    width: 0;
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .cell {
+    width: 30px;
+    height: 30px;
+  } */
+}
+
+@media (max-width: 480px) {
+  /* .cell {
+    width: 25px;
+    height: 25px;
+  } */
+  
+  .marked::before {
+    font-size: 16px;
+  }
+} 

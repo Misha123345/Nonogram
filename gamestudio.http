@@ -1,0 +1,44 @@
+### GET request to example server (get score)
+GET http://localhost:8080/api/score/nonogram_easy
+
+### POST request to example server (post score)
+POST http://localhost:8080/api/score/
+Content-Type: application/json
+
+{
+  "game": "nonogram_easy",
+  "player": "Misha_REST_2",
+  "points": 10000,
+  "playedOn": "2100-07-05T20:47:43"
+}
+
+### GET request to example server (get rating)
+GET http://localhost:8080/api/rating/nonogram/misha
+
+### GET request to example server (get average rating)
+GET http://localhost:8080/api/rating/nonogram
+
+### POST request to example server (post rating)
+POST http://localhost:8080/api/rating
+Content-Type: application/json
+
+{
+  "game": "nonogram",
+  "player": "Misha_REST",
+  "rating": 4,
+  "ratedOn": "2025-04-05T20:45:00"
+}
+
+### GET request to example server (get comments)
+GET http://localhost:8080/api/comment/nonogram
+
+### POST request to example server (post comment)
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "game": "nonogram",
+  "player": "Misha_REST",
+  "comment": "I added this comment using REST",
+  "commentedOn": "2100-04-05T21:15:00"
+}

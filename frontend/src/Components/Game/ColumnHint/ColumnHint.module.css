@@ -1,0 +1,23 @@
+.colHintCell {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(1em, auto));
+  align-items: center;
+  justify-items: center;
+  align-content: end;
+  width: 30px;
+  min-height: 50px;
+  padding: 5px 0;
+  background-color: var(--primary-light);
+  color: var(--text-light);
+}
+
+.hint {
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .colHintCell {
+    width: 25px;
+  }
+} 

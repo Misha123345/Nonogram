@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoText {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.logoN, .logoG, .logoA {
+  color: #fff;
+}
+
+.logoO, .logoR {
+  color: #fff;
+}
+
+.logoN2, .logoO2, .logoM {
+  color: #fff;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 8px);
+  grid-template-rows: repeat(3, 8px);
+  gap: 2px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+.gridCell {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+.filled {
+  background-color: var(--accent-color);
+} 

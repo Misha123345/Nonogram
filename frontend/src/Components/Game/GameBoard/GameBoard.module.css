@@ -1,0 +1,49 @@
+.gameBoard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "corner colhints"
+    "rowhints grid";
+  gap: 0;
+  margin: 2rem auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  max-width: fit-content;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.emptyCorner {
+  grid-area: corner;
+  background-color: var(--primary-light);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.colHintsContainer {
+  grid-area: colhints;
+  display: grid;
+  gap: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rowHintsContainer {
+  grid-area: rowhints;
+  display: grid;
+  gap: 0;
+  border-right: 1px solid var(--border-color);
+}
+
+.gridContainer {
+  grid-area: grid;
+  display: grid;
+  gap: 0;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+} 

@@ -1,0 +1,31 @@
+.starsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.star {
+  margin: 0 0.2rem;
+  color: #e2e8f0;
+  transition: color 0.2s;
+}
+
+.filled {
+  color: var(--primary-color);
+}
+
+.small {
+  font-size: 1.5rem;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.large {
+  font-size: 3rem;
+} 

@@ -1,0 +1,42 @@
+.thankYouCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.thankYouCard h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.userRatingDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.userRatingDisplay p {
+  margin-right: 1rem;
+}
+
+.userFeedback {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+  text-align: left;
+}
+
+.userFeedback p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feedbackText {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  font-style: italic;
+} 

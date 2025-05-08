@@ -1,0 +1,178 @@
+.gameContainer {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.gameContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.gameOverMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  min-width: 300px;
+}
+
+.gameOverMessage h2 {
+  color: #ff0000;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.gameOverMessage p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.playAgainButton {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.playAgainButton:hover {
+  background-color: #3367d6;
+}
+
+.authRequired {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.authRequired h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.authRequired p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.loginButton, 
+.registerButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.loginButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.loginButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.registerButton {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.registerButton:hover {
+  background-color: var(--secondary-dark);
+}
+
+.backButton {
+  padding: 0.5rem 1rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.wrongMoveAnimation {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.wrongMoveIndicator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.wrongMoveX {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -1,0 +1,43 @@
+.commentCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.commentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.commentHeader h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.commentDate {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.commentText {
+  color: var(--text-dark);
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .commentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .commentDate {
+    margin-top: 0.5rem;
+  }
+} 

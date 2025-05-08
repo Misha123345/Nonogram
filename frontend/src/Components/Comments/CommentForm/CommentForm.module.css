@@ -1,0 +1,71 @@
+.commentForm {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.commentForm h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .commentForm {
+    padding: 1.5rem;
+  }
+}
+
+.usernameBadge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+} 

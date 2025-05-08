@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #3498db;
+  --accent-color: #2ecc71;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #ddd;
+  
+  /* base cell size */
+  --cell-size: 3.5vmin;
+  --cell-size-medium: 3vmin;
+  --cell-size-small: 2.5vmin;
+
+  /* cell colors */
+  --filled-cell: #3498db;
+  --cell-hover: #e3f2fd;
+  --marked-cell: #e74c3c;
+  
+  /* hint colors */
+  --hint-bg: #f0f0f0;
+  --hint-border: #ddd;
+  --hint-text: #333;
+  --primary-light: #e3f2fd;
+} 

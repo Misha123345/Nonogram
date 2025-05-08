@@ -1,0 +1,18 @@
+# IDE and editor settings
+.idea/
+.vscode/
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Build outputs
+frontend/build/
+backend/target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and environment files
+*.log
+.env

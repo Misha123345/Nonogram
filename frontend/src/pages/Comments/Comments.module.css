@@ -1,0 +1,38 @@
+.commentsContainer {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.authPrompt {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.authPrompt p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.authLink {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.authLink:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
