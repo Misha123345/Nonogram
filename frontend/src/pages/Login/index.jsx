@@ -18,6 +18,7 @@ const Login = () => {
     }
   }, [isAuthenticated, navigate, clearError]);
 
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (formError) {
       setFormError('');

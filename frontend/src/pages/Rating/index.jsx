@@ -161,19 +161,6 @@ const Rating = () => {
     setRating(userRating);
   };
 
-  const handleAddNewRating = () => {
-    const newName = prompt('Enter a new username to add another rating:');
-    if (newName) {
-      // Reset form state
-      setSubmitted(false);
-      setRating(0);
-      setFeedback('');
-      setHoverRating(0);
-      
-      localStorage.setItem('username', newName);
-    }
-  };
-
   return (
     <div className={styles.ratingContainer}>
       <h1 className={styles.title}>Game Rating</h1>

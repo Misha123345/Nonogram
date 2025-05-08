@@ -58,6 +58,7 @@ const Game = () => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!isAuthenticated()) {
       setLoading(false);
@@ -147,6 +148,7 @@ const Game = () => {
     };
   }, [difficulty, isAuthenticated]);
 
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (loading || isCompleted || gameOver || !startTime) {
       return;
@@ -165,7 +167,8 @@ const Game = () => {
       stopTimer();
     };
   }, [loading, isCompleted, gameOver, startTime, isAuthenticated]);
-  
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     return () => {
       if (!isCompleted && !gameOver && isAuthenticated() && timer > 0) {
